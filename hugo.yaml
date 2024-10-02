@@ -1,0 +1,187 @@
+baseURL: ''
+title: 'DevOps Insiders'
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: DevOps Insiders
+  authorimage: ../assets/images/global/author.webp
+  og_image: "../assets/images/pages/batch17.png"
+  moto: "Empowering DevOps Excellence"
+  description: "DevOps Insiders is a premier platform offering advanced DevOps training, tools, and resources to help professionals excel. Built with modern technologies, we deliver fast, efficient, and flexible learning experiences."
+  disable_theme_toggle: false
+  disable_stay_uptodate: true
+
+  p1:
+    heading: "Our mission"
+    image: "images/pages/mission.png"
+    content:
+      - text: "At DevOps Insiders, our mission is to empower tech professionals to thrive in the fast-evolving DevOps ecosystem. We aim to foster innovation, collaboration, and the continuous improvement of processes that drive digital transformation. Our community is built on the belief that shared knowledge creates growth and success."
+      - text: "We are dedicated to bridging the gap between development and operations, promoting best practices, and nurturing a culture of automation, agility, and collaboration. From beginners to experts, we provide tools, resources, and support to ensure every member has the opportunity to excel in their journey."
+      - text: "Join us as we explore the future of DevOps, from cutting-edge technologies to strategies that make a difference. Together, we can shape a future where DevOps is the key to unlocking business potential, ensuring rapid delivery, quality, and security in every software release."
+  p2:
+    heading: "Our Batch 17 is Here. Join Now!"
+    image: "images/pages/batch17.png"
+    content:
+      - text: "The wait is over! DevOps Insiders is thrilled to announce the launch of Batch 17. This is your opportunity to join a dynamic community of professionals committed to mastering DevOps practices and accelerating their careers. Our carefully curated programs are designed to equip you with the tools, techniques, and real-world insights needed to thrive in today's fast-paced tech landscape. "
+      - text: "Don't miss your chance to be part of this exclusive cohort! Limited spots are available, so secure your place today and join the DevOps revolution. Together, we'll transform how businesses build, deploy, and maintain software"  
+
+  p3:
+    heading: "Our Students Are Placed in Top Companies"
+    content:
+      - text: "At DevOps Insiders, we take pride in the success of our students, who have gone on to secure positions at some of the most prestigious companies in the tech industry. Our rigorous, hands-on training programs have helped individuals land jobs at renowned organizations such as TCS, Bosch, Mindtree, Capgemini, Microsoft, and more."
+      - text: "With our expert-led coaching and focus on real-world applications, we prepare you not just for interviews but for long-term success in the DevOps ecosystem. Join the ranks of our alumni who are making an impact at leading global enterprises."
+    links:
+      - text: "Join Now!"
+        url: "https://chat.whatsapp.com/Ie9TENPMxAFH1nbqYUGVTQ"
+    logos:
+      - identifier: a
+        image: "images/global/microsoft1.svg"
+        alt: "Microsoft"
+      - identifier: b
+        image: "images/global/tcs.svg"
+        alt: "TCS"        
+      - identifier: c
+        image: "images/global/bosch.svg"
+        alt: "Bosch"
+      - identifier: d
+        image: "images/global/infosys.svg"
+        alt: "Infosys"      
+      - identifier: e
+        image: "images/global/capgemini.svg"
+        alt: "Capgemini"   
+      - identifier: f
+        image: "images/global/hcl.svg"
+        alt: "HCL"   
+      - identifier: g
+        image: "images/global/ibm.svg"
+        alt: "IBM"   
+      - identifier: h
+        image: "images/global/cognizant.svg"
+        alt: "Cognizant"                                    
+
+  p4:
+    heading: "From the Blog"
+    content:
+      - text: "Explore the latest insights and updates from DevOps experts. Our blog covers everything from industry trends to hands-on tips, helping you stay at the forefront of DevOps innovation."
+
+  social_media:
+    github:
+      enabled: true
+      url: 'https://github.com/devopsinsiders'
+    facebook:
+      enabled: true
+      url: 'https://facebook.com/devopsinsiders'
+    instagram:
+      enabled: true
+      url: 'https://instagram.com/devopsinsiders'   
+    instagram:
+      enabled: true
+      url: 'https://instagram.com/devopsinsiders'
+    twitter:
+      enabled: true
+      url: 'https://twitter.com/devopsinsiders'
+    
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+  
+  footer:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.114.0"
